@@ -1,10 +1,12 @@
+// eslint-disable-next-line vue/valid-attribute-name
 module.exports = {
   root: true,
   env: {
     node: true,
   },
   extends: [
-    "plugin:vue/essential",
+    // "plugin:vue/essential",
+    "plugin:vue/vue3-recommended",
     "eslint:recommended",
     "@vue/typescript/recommended",
     "plugin:prettier/recommended",
