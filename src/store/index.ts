@@ -1,11 +1,16 @@
-import { createStore } from "vuex";
+import { createStore, mapState } from "vuex";
 
 const store = createStore({
-  state: {},
-  getters: {},
-  mutations: {},
-  actions: {},
-  modules: {},
+  state() {
+    return {
+      count: 0,
+    };
+  },
+  mutations: {
+    increment(state: any) {
+      state.count++;
+    },
+  },
 });
 
 export default store;
